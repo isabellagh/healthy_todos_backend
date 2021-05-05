@@ -2,7 +2,7 @@ class Api::V1::TodoListsController < ApplicationController
 
   def index 
     todo_lists = Task.all
-    render json: todo_lists 
+    render json: TodoListSerializer.new(todo_lists) 
   end 
 
   def create
