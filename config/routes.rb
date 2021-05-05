@@ -3,13 +3,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do 
-      resources :tasks, only: [:index]
+      resources :tasks, only: [:index, :create]
     end 
   end 
 
   namespace :api do
     namespace :v1 do 
-      resources :todo_lists, only: [:index]
+      resources :todo_lists, only: [:index, :create]
     end 
   end
 
