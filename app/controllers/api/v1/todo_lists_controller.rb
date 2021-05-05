@@ -17,7 +17,7 @@ class Api::V1::TodoListsController < ApplicationController
   private
 
   def todo_list_params 
-    params.require(:todo_lists).permit(:name, :notes, :completed, :todo_list_id)
+    params.require(:todo_lists).permit(:name)
   end
 
 end
